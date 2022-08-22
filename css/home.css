@@ -172,7 +172,7 @@
   height: auto;
   display: flex;
   overflow: hidden;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   align-items: center;
   flex-direction: column;
 }
@@ -568,7 +568,7 @@
 }
 
 .home-image02 {
-  width: 320px;
+  width: 900px;
   object-fit: cover;
 }
 
