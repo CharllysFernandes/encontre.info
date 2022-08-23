@@ -1324,13 +1324,18 @@
   }
 
   .home-text12 {
-    font-size: 50px;
     text-align: center;
+    font-size: 18px;
   }
 
   .home-clients {
     justify-content: center;
   }
+ 
+  .home-image02 {
+    width: 600px;
+    object-fit: cover;
+}
 
   .home-image03 {
     margin: var(--dl-space-space-unit);
