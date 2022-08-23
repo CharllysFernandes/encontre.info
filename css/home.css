@@ -175,6 +175,8 @@
   /* min-height: 100vh; */
   align-items: center;
   flex-direction: column;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .home-header-container {
@@ -1144,7 +1146,8 @@
   flex: 0 0 auto;
   width: 200px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: end;
   flex-direction: row;
 }
 
