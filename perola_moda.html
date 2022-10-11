@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/hover-min.css">
+    <title>Perola Moda</title>
+    <meta name="description" content="Site de informações de Perola Moda. Look por apenas R$18,00">
+    
+
+    <style>
+        :root {
+            --color-band: #e86e94;
+        }
+
+        body {
+            background-image: linear-gradient(to right bottom, #b5687c, #c7877e, #d0a98d, #d6caac, #e2e8d3);
+            text-align: -webkit-center;
+            height: 100vh;
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .btn {
+            border: var(--color-band);
+            width: 18em;
+            background-color: var(--color-band);
+        }
+
+        .btn-primary {
+            --bs-btn-hover-bg: var(--color-band) !important;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .size-width-card {
+                width: 15rem !important;
+            }
+
+            .btn {
+                width: 12em;
+            }
+        }
+
+        .card-title {
+            font-weight: 500;
+        }
+
+        .card-text {
+            font-weight: 300;
+        }
+    </style>
+
+</head>
+
+<body class="d-flex justify-content-center">
+    <main class="p-5 d-flex flex-column justify-content-center ">
+        <div class="card w-auto animate__animated animate__bounceIn shadow size-width-card">
+            <div class="card-header">
+                <img class="rounded-circle" src="./images/perola-moda.jpg" alt="" srcset="" width="90em">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title fs-4">Pérola Moda</h5>
+                <p class="card-text fs-6">Moda Unissex e Infantil</p>
+                <div class="mb-auto flex-column d-flex align-items-center">
+                    <a class="hvr-grow-shadow mb-2 btn btn-primary d-flex justify-content-between align-items-center"
+                        href="https://www.instagram.com/perolanoivas/">
+                        <i class="bi bi-instagram"></i>
+                        Instagram
+                    </a>
+                    <a class="hvr-grow-shadow mb-2 btn btn-primary d-flex justify-content-between align-items-center"
+                        href="">
+                        <i class="bi bi-whatsapp"></i>
+                        Whatsapp
+                    </a>
+                    <a class="hvr-grow-shadow mb-2 btn btn-primary d-flex justify-content-between align-items-center"
+                        href="https://www.google.com/maps/place/15%C2%B037'05.9%22S+47%C2%B039'06.5%22W">
+                        <i class="bi bi-geo-alt"></i>
+                        Localização
+                    </a>
+
+
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                Looks por apenas R$ 18,00
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
