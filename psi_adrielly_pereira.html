@@ -5,80 +5,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Adrielly Perreira - Psicóloga</title>
     <meta name="description" content="Psicóloga em Sobradinho DF. Acesse para mais informaçõoes.">
 
-    <style>
-    #size-card-width {
-        width: 450px;
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- hover -->
+    <link rel="stylesheet" href="./hover-min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9PP6S64LRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9PP6S64LRL');
+    </script>
+</head>
+<style>
+    * {
+        /* border: #E14400 solid 1px; */
     }
 
-    @media only screen and (max-width: 600px) {
-        body {
-            height: 150vh;
-        }
-
-        #size-card-width {
-            width: 70vw;
-        }
+    :root {
+        --primary-color: #0053CC;
+        --second-color: #E14400;
+        --primary-botton: #D4E6FF;
+        --second-botton: #FFE6DB;
     }
 
     body {
-        height: 100vh;
-        background-repeat: round;
-        background-size: 100%;
-        background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 200%);
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(181deg, #e0c3fc 0%, #ffffff57 100%);
+        font-family: monospace;
     }
 
-    .w-50 {
-        width: 145px !important;
+    .button-primary {
+        background-color: var(--primary-botton);
+        color: var(--primary-color);
     }
 
-    .background-card {
-        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 200%);
+    .button-second {
+        background-color: var(--second-botton);
+        color: var(--second-color);
     }
-    </style>
-</head>
 
-<body class="text-center flex-column d-flex justify-content-center p-2">
-    <section style="z-index: 1;">
-        <div class="background-card card container text-center mt-2 mb-2 p-1 shadow-lg rounded-4" id="size-card-width">
-            <img src="./images/Adrielly_Pereira.jpg" class="card-img-top mt-3 rounded-circle min-vw-50 align-self-center w-50" alt="..." id="image-size">
-            <div class="card-body">
-                <h5 class="card-title mt-2 text-wrap">Adrielly Pereira</h5>
-                <p class="card-text mt-2 text-wrap">Psicóloga<br>
-                    Graduada pela UFPI, especialista em Saúde Mental,<br>
-                    Teoria Psicanalítica e Mestre em Políticas Públicas.
-                </p>
-                <div class="col-8 mx-auto">
-                    <a class="text-decoration-none" href="https://www.instagram.com/psiadriellypereira/" target="_blank" rel="noopener noreferrer">
-                        <button class="btn btn-outline-primary rounded-5 w-100 d-flex mb-4">
-                            <i class="bi bi-instagram align-tex"></i>
-                            <span class="w-100">Instagram</span>
-                        </button>
-                    </a>
-                    <a class="text-decoration-none" href="https://tinyurl.com/2ahfdas6" target="_blank" rel="noopener noreferrer">
-                        <button class="btn btn-outline-primary rounded-5 w-100 d-flex mb-4">
-                            <i class="bi bi-whatsapp align-tex"></i>
-                            <span class="w-100">Consulta</span>
-                        </button>
-                    </a>
-                    <a class="text-decoration-none" href="https://goo.gl/maps/cnH8cy6a8DoZ4kpz9">
-                        <button class="btn btn-outline-primary rounded-5 w-100 d-flex mb-4">
-                            <i class="bi bi-geo-alt align-tex"></i>
-                            <span class="w-100">Localização</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="position-fixed bottom-0 start-50 translate-middle-x" style="z-index: 0;">
-        <a class="text-decoration-none" href="https://encontre.info/"><i class="bi bi-bookmark-check-fill"></i> Encontre.info</a>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    .image-brand {
+        width: 300px !important;
+    }
+
+    footer {
+        z-index: -1030 !important;
+    }
+
+    footer svg {
+        width: 24px;
+        z-index: -1 !important;
+
+    }
+
+    .container {
+        width: 375px;
+    }
+</style>
+
+<body class="container animate__animated animate__fadeIn">
+    <main class="text-center text-decoration-none mx-3 h-100">
+        <!-- Title -->
+        <h2 class="fs-2 mt-3">Olá!</h2>
+        <!-- Image Brand -->
+        <img src="./images/Adrielly_Pereira.jpg"
+            class="card-img-top rounded-circle min-vw-50 align-self-center w-50 mt-2 " alt="..." id="image-size">
+        <!-- <img class="image-brand" src="./image1.png" alt="photo perfil" srcset="" width="375px"> -->
+        <!-- text information -->
+        <h3 class="mt-3 fs-5">Psicóloga</h3>
+        <h3 class="my-3 fs-6">
+            Graduada pela UFPI, especialista em saúde mental,
+            teoria psicanalítica e mestre em políticas públicas.
+        </h3>
+        <!-- Buttons link -->
+        <a href="https://wa.me/5561985610379">
+            <button
+                class="button-primary w-100 h-100 py-3 rounded-1 my-2 border-0 animate__animated animate__fadeInLeft hvr-grow">
+                <span class="fs-6">Agende uma consulta</span>
+            </button>
+        </a>
+        <a href="https://www.instagram.com/psiadriellypereira/">
+            <button
+                class="button-second w-100 h-auto py-3 rounded-1 my-2 border-0 animate__animated animate__fadeInLeft animate__delay-1s">
+                <span class="fs-6">Instagram</span>
+            </button>
+        </a>
+        <a href="https://goo.gl/maps/cnH8cy6a8DoZ4kpz9">
+            <button
+                class="button-second w-100 h-100 py-3 rounded-1 my-2 border-0 animate__animated animate__fadeInLeft animate__delay-2s">
+                <span class="fs-6">Localização</span>
+            </button>
+        </a>
+
+
+        <!-- footer Link Social Media -->
+        <!-- <footer
+             class="text-center d-inline w-auto align-bottom m-3 sticky-lg-bottom sticky-md-bottom sticky-sm-bottom sticky-xl-bottom animate__animated animate__fadeIn animate__delay-3s">
+              svg Youtube 
+             <a href="#" class="text-decoration-none ">
+                 <svg class="mx-2" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                         d="M57.7585 15.2539C57.4167 14.0291 56.7647 12.9132 55.8655 12.014C54.9663 11.1148 53.8503 10.4628 52.6255 10.1209C48.0284 8.88932 29.527 8.88932 29.527 8.88932C29.527 8.88932 11.0723 8.86473 6.4285 10.1209C5.20367 10.4628 4.08772 11.1148 3.18854 12.014C2.28935 12.9132 1.63733 14.0291 1.2955 15.2539C0.424071 19.9604 -0.00554726 24.7381 0.0122497 29.5246C-0.00218282 34.293 0.427422 39.0524 1.2955 43.7411C1.63733 44.9659 2.28935 46.0819 3.18854 46.9811C4.08772 47.8803 5.20367 48.5323 6.4285 48.8741C11.0207 50.1082 29.527 50.1082 29.527 50.1082C29.527 50.1082 47.9793 50.1082 52.6255 48.8741C53.8503 48.5323 54.9663 47.8803 55.8655 46.9811C56.7647 46.0819 57.4167 44.9659 57.7585 43.7411C58.6084 39.0507 59.0199 34.2913 58.9877 29.5246C59.0233 24.7398 58.6118 19.9622 57.7585 15.2539ZM23.6221 38.3524V20.6697L39.0211 29.5246L23.6221 38.3524Z"
+                         fill="#E14400" />
+                 </svg>
+             </a>
+              Instagram
+             <a href="https://www.instagram.com/psiadriellypereira/" class="text-decoration-none">
+                 <svg class="mx-2" width="59" height="59" viewBox="0 0 59 59" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_4_123)">
+                         <path
+                             d="M29.5 0C21.4858 0 20.4853 0.036875 17.3386 0.177C14.1969 0.3245 12.0581 0.818625 10.1775 1.54875C8.23787 2.301 6.59079 3.31137 4.95108 4.95108C3.31137 6.59079 2.29854 8.23542 1.54875 10.1775C0.818625 12.0581 0.322042 14.1969 0.177 17.3386C0.0295 20.4853 0 21.4858 0 29.5C0 37.5142 0.036875 38.5147 0.177 41.6614C0.3245 44.8007 0.818625 46.9419 1.54875 48.8225C2.301 50.7597 3.31137 52.4092 4.95108 54.0489C6.59079 55.6862 8.23542 56.7015 10.1775 57.4513C12.0606 58.1789 14.1993 58.678 17.3386 58.823C20.4853 58.9705 21.4858 59 29.5 59C37.5142 59 38.5147 58.9631 41.6614 58.823C44.8007 58.6755 46.9419 58.1789 48.8225 57.4513C50.7597 56.699 52.4092 55.6862 54.0489 54.0489C55.6862 52.4092 56.7015 50.767 57.4513 48.8225C58.1789 46.9419 58.678 44.8007 58.823 41.6614C58.9705 38.5147 59 37.5142 59 29.5C59 21.4858 58.9631 20.4853 58.823 17.3386C58.6755 14.1993 58.1789 12.0557 57.4513 10.1775C56.699 8.23787 55.6862 6.59079 54.0489 4.95108C52.4092 3.31137 50.767 2.29854 48.8225 1.54875C46.9419 0.818625 44.8007 0.322042 41.6614 0.177C38.5147 0.0295 37.5142 0 29.5 0ZM29.5 5.31C37.374 5.31 38.3131 5.34933 41.4229 5.48454C44.2992 5.61975 45.8602 6.09667 46.8976 6.50475C48.2792 7.03821 49.2576 7.67737 50.295 8.70742C51.3251 9.73992 51.9642 10.7208 52.4977 12.1024C52.9009 13.1398 53.3827 14.7008 53.513 17.5771C53.6531 20.6893 53.6851 21.6235 53.6851 29.5C53.6851 37.3765 53.6482 38.3131 53.5032 41.4229C53.3532 44.2992 52.8738 45.8602 52.4682 46.8976C51.9175 48.2792 51.2907 49.2576 50.2582 50.295C49.2281 51.3251 48.2325 51.9642 46.8657 52.4977C45.8332 52.9009 44.2475 53.3827 41.3713 53.513C38.2394 53.6531 37.3175 53.6851 29.4263 53.6851C21.5325 53.6851 20.6107 53.6482 17.4812 53.5032C14.6025 53.3532 13.0169 52.8738 11.9844 52.4682C10.5856 51.9175 9.62437 51.2907 8.59433 50.2582C7.55937 49.2281 6.89808 48.2325 6.38183 46.8657C5.97621 45.8332 5.49929 44.2475 5.34933 41.3713C5.23871 38.2738 5.19937 37.3175 5.19937 29.4631C5.19937 21.6063 5.23871 20.6475 5.34933 17.5132C5.49929 14.6369 5.97621 13.0537 6.38183 12.0212C6.89808 10.62 7.55937 9.66125 8.59433 8.62629C9.62437 7.59625 10.5856 6.9325 11.9844 6.41871C13.0169 6.01062 14.5681 5.53125 17.4443 5.38375C20.5787 5.27313 21.5006 5.23625 29.3894 5.23625L29.5 5.31ZM29.5 14.3517C21.1294 14.3517 14.3517 21.1367 14.3517 29.5C14.3517 37.8706 21.1367 44.6483 29.5 44.6483C37.8706 44.6483 44.6483 37.8632 44.6483 29.5C44.6483 21.1294 37.8632 14.3517 29.5 14.3517ZM29.5 39.3333C24.0671 39.3333 19.6667 34.9329 19.6667 29.5C19.6667 24.0671 24.0671 19.6667 29.5 19.6667C34.9329 19.6667 39.3333 24.0671 39.3333 29.5C39.3333 34.9329 34.9329 39.3333 29.5 39.3333ZM48.7881 13.7544C48.7881 15.7087 47.2 17.2944 45.2481 17.2944C43.2937 17.2944 41.7081 15.7063 41.7081 13.7544C41.7081 11.8025 43.2962 10.2168 45.2481 10.2168C47.1975 10.2144 48.7881 11.8025 48.7881 13.7544Z"
+                             fill="#E14400" />
+                     </g>
+                     <defs>
+                         <clipPath id="clip0_4_123">
+                             <rect width="59" height="59" fill="white" />
+                         </clipPath>
+                     </defs>
+                 </svg>
+             </a>
+             <a href="#" class="text-decoration-none">
+                 <svg class="mx-2" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_4_121)">
+                         <path
+                             d="M58.8869 11.2321C56.7113 12.1884 54.3882 12.8398 51.9421 13.1373C54.4349 11.6352 56.3524 9.26786 57.2595 6.44324C54.9216 7.80761 52.3305 8.80078 49.5723 9.3539C47.3696 6.99636 44.2303 5.52136 40.7444 5.52136C34.0651 5.52136 28.6494 10.9371 28.6494 17.609C28.6494 18.5677 28.76 19.4896 28.9616 20.3722C18.907 19.8977 9.99558 15.0695 4.03167 7.77074C2.98196 9.54565 2.39442 11.6082 2.39442 13.8551C2.39442 18.0589 4.53317 21.7537 7.77325 23.9244C5.78937 23.8605 3.9235 23.3148 2.29608 22.4101V22.5601C2.29608 28.4232 6.45804 33.3128 11.9967 34.4264C10.9814 34.6993 9.90954 34.8468 8.81067 34.8468C8.03875 34.8468 7.29879 34.7731 6.55883 34.6354C8.11004 39.4365 12.5695 42.9372 17.877 43.0355C13.747 46.2781 8.51321 48.2103 2.87625 48.2103C1.9175 48.2103 0.961208 48.1538 0 48.0456C5.38129 51.4725 11.7213 53.4761 18.5776 53.4761C40.8354 53.4761 52.9918 35.0484 52.9918 19.0938C52.9918 18.58 52.9918 18.0613 52.955 17.5451C55.3174 15.8513 57.38 13.7101 59.0025 11.2812L58.8869 11.2321Z"
+                             fill="#E14400" />
+                     </g>
+                     <defs>
+                         <clipPath id="clip0_4_121">
+                             <rect width="59" height="59" fill="white" />
+                         </clipPath>
+                     </defs>
+                 </svg>
+             </a>
+         </footer> -->
+    </main>
+
+
+
 </body>
 
 </html>
